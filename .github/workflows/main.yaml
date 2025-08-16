@@ -69,7 +69,7 @@ jobs:
         with:
           context: ./backend/
           push: true
-          tags: julianastr/taski_backend:latest
+          tags: nazhia/taski_backend:latest
 
   frontend_tests:
     runs-on: ubuntu-latest
@@ -111,7 +111,7 @@ jobs:
         with:
           context: ./frontend/
           push: true
-          tags: julianastr/taski_frontend:latest
+          tags: nazhia/taski_frontend:latest
 
   build_gateway_and_push_to_docker_hub:
     name: Push gateway Docker image to DockerHub
@@ -131,7 +131,7 @@ jobs:
         with:
           context: ./gateway/
           push: true
-          tags: julianastr/taski_gateway:latest
+          tags: nazhia/taski_gateway:latest
 
   deploy:
     runs-on: ubuntu-latest
